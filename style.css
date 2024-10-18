@@ -1,0 +1,44 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+#flag-container {
+    margin: 20px;
+}
+
+#flag-image {
+    max-width: 100%;
+    border: 2px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#answer-input {
+    margin: 10px;
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid #333;
+    border-radius: 5px;
+}
+
+#submit-button, #skip-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#submit-button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+}
+
+#skip-button {
+    background-color: #2196f3;
+    color: #fff;
+    border: none;
+    margin-left: 10px;
+}
