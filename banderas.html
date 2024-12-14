@@ -5,17 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adivina la Bandera</title>
     <link rel="stylesheet" type="text/css" href="./style.css">
-  </head>
+</head>
 <body>
     <h1>Adivina la Bandera</h1>
-    <div id="flag-container">
+    
+    <!-- Botones para seleccionar el modo de juego -->
+    <div id="game-mode-selection">
+        <button onclick="setGameMode('free')">Modo Libre</button>
+        <button onclick="setGameMode('limited')">Modo Limitado</button>
+    </div>
+
+    <!-- Indicador del modo de juego seleccionado -->
+    <div id="game-mode-info">
+        <p>Modo de juego: <span id="current-mode">Limitado</span></p>
+        <p id="game-difference"></p>
+    </div>
+
+    <!-- Contenedor de la bandera -->
+    <div id="flag-container" style="display: none;">
         <img id="flag-image" src="" alt="Bandera">
     </div>
+
+    <!-- Contador de respuestas correctas -->
+    <div id="status">
+        <p id="correct-answers">Respuestas correctas: 0</p>
+        <p id="flag-counter"></p>
+    </div>
+
+    <!-- Input para la respuesta -->
     <input type="text" id="answer-input" placeholder="Escribe el nombre del país">
+
+    <!-- Botones para enviar la respuesta o saltar la bandera -->
     <button id="submit-button" onclick="checkAnswer()">Enviar</button>
     <button id="skip-button" onclick="skipFlag()">Saltar Bandera</button>
-<script src="./script1.js"></script>
-<script src="./script2.js"></script>
-  </body>
+
+    <script src="./script1.js"></script>
+    <script src="./script2.js"></script>
+</body>
 </html>
-    
